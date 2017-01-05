@@ -1,0 +1,11 @@
+@for $i from 1 through 10 {
+	.w#{$i}s{
+		width: percentage(1/$i);
+	}
+}
+
+@include List($width,width,w);
+@include List($height,height,h);
+.wh{
+	@include wh();
+}

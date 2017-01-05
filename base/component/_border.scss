@@ -1,0 +1,17 @@
+//边框和颜色一致
+.bd{
+	@include bd;
+}
+.outline{
+	outline: 1px solid;
+}
+// 上下左右一像素的实线
+$border:(bdt:border-top,bdb:border-bottom,bdl:border-left,bdr:border-right);
+@each $k,$v in $border{
+	.#{$k}{
+		#{$v}:1px solid;
+	}
+}
+
+@include List($radius,border-radius,rds);
+

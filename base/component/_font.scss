@@ -1,0 +1,7 @@
+@include List($fsize,font-size,f);
+@include List($lheight,line-height,lh);
+@each $v in $lheight-s{
+	.lh#{$v}s{
+		line-height: if($v<10,$v,$v / 10);
+	}
+}

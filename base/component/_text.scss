@@ -1,0 +1,9 @@
+$talign:(tl:left,tr:right,tc:center,tj:justify);
+@include Map($talign,text-align);
+
+.ell{
+	@include ell;
+}
+
+$align:(vs:sub,vt:top,vm:middle,vb:bottom);
+@include Map($align,vertical-align);

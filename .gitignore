@@ -45,3 +45,8 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+
+#scss缓存 css map
+.sass-cache
+*.css
+*.css.map

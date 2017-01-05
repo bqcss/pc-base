@@ -1,0 +1,10 @@
+// 常用padding和margin值
+$pp:(p:padding, pt:padding-top, pl:padding-left,m:margin,mt:margin-top,ml:margin-left,mb:margin-bottom,mr:margin-right );
+@each $k,$y in ($pp){
+ @include List($pm,$y,$k); 
+}
+
+.ma{
+	margin-left: auto;
+	margin-right: auto;
+}

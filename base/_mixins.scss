@@ -1,0 +1,58 @@
+// 构造
+
+/*
+只针对map结构的构造器
+$css是作为css的参数用的
+*/
+@mixin Map($map,$css){
+  @each $k ,$v in $map{
+    .#{$k}{
+      #{$css}:$v;
+    }
+  }
+}
+
+/*
+只针对list结构的构造器
+$css是作为css的参数用的
+$pr作为简写用的
+*/
+@mixin List($lists,$css,$pr){
+  @each $v in $lists{
+    .#{$pr}#{$v}{
+      #{$css}:$v+px;
+    }
+  }
+}
+
+// for循环 
+
+@mixin For($for,$css,$pr,$w:null){
+  @for $i from 0 to $for{
+    .#{$pr}#{$i}{
+      #{$css}:#{$w}#{$i};
+    }
+  }
+}
+//位置top left的
+@mixin tl($top:0,$left:0){
+  top:$top;
+  left:$left;
+}
+// 宽高的
+@mixin wh($w: auto,$h: auto){
+  width: $w;
+  height: $h;
+}
+// 定义边框的
+@mixin bd($bw:1px,$bs:solid){
+  border-width: $bw;
+  border-style: $bs;
+}
+
+// 不折行
+@mixin ell{
+  overflow-x:hidden;
+  white-space: nowrap;
+  text-overflow:ellipsis;
+}

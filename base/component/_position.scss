@@ -1,0 +1,17 @@
+
+// 位置的
+$po:(poa:absolute,por:relative,pof:fixed,pos:static);
+@include Map($po,position);
+
+.tl0{
+	@include tl;
+}
+
+.all0{
+	@include tl;
+	bottom: 0;
+	right: 0;
+}
+.clip0{
+	clip: rect(0 0 0 0);
+}

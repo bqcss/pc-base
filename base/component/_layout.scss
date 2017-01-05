@@ -1,0 +1,24 @@
+// float
+$float:(l:left,r:right);
+@include Map($float,float) ;
+
+$display: (dn:none,din:inline-block,dli:list-item,di:inline,db:block,dt:table,dtc:table-cell,dtr:table-row);
+@include Map($display,display);
+
+.clearfix{
+	&:before{
+	@extend .dt;
+	}
+	&:after{
+	@extend .dt;
+	clear:both;
+	}
+}
+
+$visibility: (vs:visible,hd:hidden);
+@include Map($visibility,visibility);
+
+$overflow: (oh:hidden,os:scroll,oa:auto);
+@include Map($overflow,overflow);
+.ohx{overflow-x:hidden}
+.ohy{overflow-x:hidden}

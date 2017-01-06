@@ -1,9 +1,19 @@
+// text-align
 $talign:(tl:left,tr:right,tc:center,tj:justify);
 @include Map($talign,text-align);
 
+// 单个不辙行
 .ell{
 	@include ell;
 }
-
+//vertical-align
 $align:(vs:sub,vt:top,vm:middle,vb:bottom);
 @include Map($align,vertical-align);
+
+// text-decoration
+$decoration:(underline:underline,through:line-through);
+@include Map($decoration,text-decoration);
+
+// direction
+$direction:(ltr:ltr,rtl:rtl);
+@include Map($direction,direction);

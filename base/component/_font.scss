@@ -1,7 +1,16 @@
+// font-size的
 @include List($fsize,font-size,f);
+// line-height的
 @include List($lheight,line-height,lh);
+//加s的整数 直接s 小数两位s
 @each $v in $lheight-s{
 	.lh#{$v}s{
 		line-height: if($v<10,$v,$v / 10);
 	}
 }
+// font-style
+$fstyle:(fi:italic);
+@include Map($fstyle,font-style);
+// font-weight
+$fweight:(fb:bold,fl:lighter);
+@include Map($fweight,font-weight);

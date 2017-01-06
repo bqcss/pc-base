@@ -1,0 +1,6 @@
+$cursor:(pointer,wait,move,not-allowed,zoom-in,zoom-out);
+@each $c in $cursor{
+  .#{$c}{
+    cursor: $c;
+  }
+}

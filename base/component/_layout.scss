@@ -7,10 +7,14 @@ $display: (dn:none,din:inline-block,dli:list-item,di:inline,db:block,dt:table,dt
 
 .clearfix{
 	&:before{
+    content: '';
+    width: 100%;
 	@extend .dt;
 	}
 	&:after{
 	@extend .dt;
+  content: '';
+  width: 100%;
 	clear:both;
 	}
 }

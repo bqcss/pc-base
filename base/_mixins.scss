@@ -52,7 +52,7 @@ $pr作为简写用的
 
 // 不折行
 @mixin ell{
-  overflow-x:hidden;
+  overflow:hidden;
   white-space: nowrap;
   text-overflow:ellipsis;
 }

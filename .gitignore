@@ -48,5 +48,4 @@ Temporary Items
 
 #scss缓存 css map
 .sass-cache
-*.css
 *.css.map

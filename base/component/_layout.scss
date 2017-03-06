@@ -26,3 +26,7 @@ $overflow: (oh:hidden,os:scroll,oa:auto);
 @include Map($overflow,overflow);
 .ohx{overflow-x:hidden}
 .ohy{overflow-x:hidden}
+
+.bbb{
+  @include bbb;
+}

@@ -56,3 +56,7 @@ $pr作为简写用的
   white-space: nowrap;
   text-overflow:ellipsis;
 }
+// 
+@mixin bbb{
+    box-sizing: border-box;
+}

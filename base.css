@@ -253,6 +253,9 @@ $pr作为简写用的
 .ohy {
   overflow-x: hidden; }
 
+.bbb {
+  box-sizing: border-box; }
+
 .w1s {
   width: 100%; }
 
